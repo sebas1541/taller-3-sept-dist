@@ -184,6 +184,8 @@ Este taller permitió comprender las diferencias fundamentales entre bind mounts
 - **Backup:** Docker proporciona mecanismos nativos para respaldo y restauración
 
 ### Problemas encontrados y soluciones:
+- **Comandos confusos:** La verdad algunos comandos de Docker son bien largos y confusos, con tantos parámetros y flags que a veces uno no sabe ni qué está escribiendo jejeje
+- **Práctica necesaria:** Como los comandos pueden ser complicados, toca seguir practicando para que no se olviden
 - **Permisos:** Algunos comandos requirieron ajustar permisos de archivos
 - **Puertos:** Verificar que los puertos no estuvieran ocupados antes de levantar contenedores
 - **Limpieza:** Importancia de limpiar contenedores y volúmenes después de las pruebas
