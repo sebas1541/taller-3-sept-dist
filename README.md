@@ -175,16 +175,6 @@ docker run --rm -v appdata_restored:/data alpine:3.20 cat /data/info.txt
 
 ## Reflexión General
 
-Este taller permitió comprender las diferencias fundamentales entre bind mounts y named volumes en Docker:
-
-- **Bind mounts:** Útiles para desarrollo, permiten control directo desde el host
-- **Named volumes:** Ideales para datos de producción, gestionados por Docker
-- **Persistencia:** Ambos mecanismos mantienen datos independientes del contenedor
-- **Compartición:** Los volúmenes facilitan la comunicación entre contenedores
-- **Backup:** Docker proporciona mecanismos nativos para respaldo y restauración
-
-### Problemas encontrados y soluciones:
-
 La verdad algunos comandos de Docker son bien largos y confusos, con tantos parámetros y flags que a veces uno no sabe ni qué está escribiendo jejeje. Como los comandos pueden ser complicados, toca seguir practicando para que no se olviden y uno pueda usarlos sin tanto problema.
 
 También tuvimos algunos temas con permisos de archivos que tocó ajustar, verificar que los puertos no estuvieran ocupados antes de levantar contenedores, y la importancia de limpiar contenedores y volúmenes después de las pruebas para no dejar basura en el sistema.
