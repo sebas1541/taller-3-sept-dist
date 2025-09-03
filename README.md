@@ -119,8 +119,6 @@ docker run --rm -v sharedlogs:/data alpine:3.20 sh -c 'tail -n 3 /data/log.txt'
 
 ![Screenshot 3](PUNTO%203/3.png)
 
-![Screenshot 4](PUNTO%203/4.png)
-
 ![Screenshot 5](PUNTO%203/5.png)
 
 ![Screenshot 6](PUNTO%203/6.png)
