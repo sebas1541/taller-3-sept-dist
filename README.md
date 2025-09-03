@@ -22,11 +22,14 @@ docker exec -it web-ro sh -c 'echo test > /usr/share/nginx/html/test.txt'
 ```
 
 ### Capturas:
-- Verificación del contenedor corriendo y página web funcionando
-- Error al intentar escribir en el sistema de archivos de solo lectura
-- Modificación del archivo desde el host y recarga automática
 
-**Carpeta:** `PUNTO 1/` (4 capturas)
+![Screenshot 1](PUNTO%201/Screenshot%202025-09-03%20at%2011.01.28%E2%80%AFAM.png)
+
+![Screenshot 2](PUNTO%201/Screenshot%202025-09-03%20at%2011.01.33%E2%80%AFAM.png)
+
+![Screenshot 3](PUNTO%201/Screenshot%202025-09-03%20at%2011.01.41%E2%80%AFAM.png)
+
+![Screenshot 4](PUNTO%201/Screenshot%202025-09-03%20at%2011.02.35%E2%80%AFAM.png)
 
 ### Lo aprendido:
 - Los bind mounts permiten compartir archivos entre host y contenedor
@@ -64,11 +67,16 @@ docker run -d --name pg -e POSTGRES_PASSWORD=postgres -p 5432:5432 \
 ```
 
 ### Capturas:
-- Creación de la base de datos y tabla
-- Inserción y consulta de datos
-- Verificación de persistencia después de recrear el contenedor
 
-**Carpeta:** `PUNTO 2/` (5 capturas)
+![Screenshot 1](PUNTO%202/Screenshot%202025-09-03%20at%2011.08.16%E2%80%AFAM.png)
+
+![Screenshot 2](PUNTO%202/Screenshot%202025-09-03%20at%2011.15.12%E2%80%AFAM.png)
+
+![Screenshot 3](PUNTO%202/Screenshot%202025-09-03%20at%2011.15.20%E2%80%AFAM.png)
+
+![Screenshot 4](PUNTO%202/Screenshot%202025-09-03%20at%2011.17.36%E2%80%AFAM.png)
+
+![Screenshot 5](PUNTO%202/Screenshot%202025-09-03%20at%2011.21.55%E2%80%AFAM.png)
 
 ### Lo aprendido:
 - Los named volumes persisten datos independientemente del ciclo de vida del contenedor
@@ -104,11 +112,20 @@ docker run --rm -v sharedlogs:/data alpine:3.20 sh -c 'tail -n 3 /data/log.txt'
 ```
 
 ### Capturas:
-- Productor escribiendo timestamps
-- Consumidor leyendo en tiempo real con `tail -f`
-- Continuidad del archivo después de reiniciar el productor
 
-**Carpeta:** `PUNTO 3/` (7 capturas)
+![Screenshot 1](PUNTO%203/1.png)
+
+![Screenshot 2](PUNTO%203/2.png)
+
+![Screenshot 3](PUNTO%203/3.png)
+
+![Screenshot 4](PUNTO%203/4.png)
+
+![Screenshot 5](PUNTO%203/5.png)
+
+![Screenshot 6](PUNTO%203/6.png)
+
+![Screenshot 7](PUNTO%203/7.png)
 
 ### Lo aprendido:
 - Un volumen puede ser compartido simultáneamente entre múltiples contenedores
@@ -142,11 +159,12 @@ docker run --rm -v appdata_restored:/data alpine:3.20 cat /data/info.txt
 ```
 
 ### Capturas:
-- Creación del backup comprimido
-- Proceso de restauración
-- Verificación del contenido restaurado
 
-**Carpeta:** `PUNTO 4/` (3 capturas)
+![Screenshot 1](PUNTO%204/8.png)
+
+![Screenshot 2](PUNTO%204/9.png)
+
+![Screenshot 3](PUNTO%204/10.png)
 
 ### Lo aprendido:
 - Los volúmenes se pueden respaldar usando contenedores temporales
